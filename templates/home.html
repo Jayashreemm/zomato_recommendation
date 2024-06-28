@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Dine-In Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fceae8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ff6f61;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #ff8a80;
+        }
+        .container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content h1 {
+            color: #ff6f61;
+            font-size: 36px;
+        }
+        .content p {
+            color: #333;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .recommend-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .recommend-btn:hover {
+            background-color: #ff8a80;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Advanced Food Animation */
+        .food-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .food-animation img {
+            width: 70px;
+            margin: 10px;
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .food-animation img:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        .food-animation img:nth-child(3) {
+            animation-delay: 1s;
+        }
+        .food-animation img:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Zomato Dine-In Recommendations
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Zomato Dine-In Recommendations</h1>
+            <p>Your ultimate guide to the best dining experiences.</p>
+            <p>Discover new places, enjoy delicious meals, and have a great time with our top-notch restaurant recommendations.</p>
+            <button class="recommend-btn" onclick="location.href='/recommend'">Get Recommendation</button>
+        </div>
+        <div class="food-animation">
+            <img src="https://img.icons8.com/emoji/96/000000/hamburger-emoji.png" alt="Hamburger">
+            <img src="https://img.icons8.com/emoji/96/000000/pizza-emoji.png" alt="Pizza">
+            <img src="https://img.icons8.com/emoji/96/000000/sushi-emoji.png" alt="Sushi">
+            <img src="https://img.icons8.com/emoji/96/000000/spaghetti-emoji.png" alt="Spaghetti">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Zomato Dine-In Recommendations
+    </footer>
+</body>
+</html>
